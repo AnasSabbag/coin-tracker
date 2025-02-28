@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coin tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="header-container">
+      <div class="nav">
+        <div class="search-div">
+          <input
+            type="text"
+            id="ip-search"
+            placeholder="Search by name or symbol"
+          />
+        </div>
+
+        <div class="btn">
+          <button id="btn-sort-mkt-cap">Sort By Mkt Cap</button>
+          <button id="btn-sort-percent">Sort By percentage</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="table-container">
+      <table class="table-main">
+        <tbody id="table-body">
+          <tr>
+            <td>
+              <div class="coin-image">
+                <img
+                  src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?  1696501400"
+                />
+                <div>${item.name}</div>
+              </div>
+            </td>
+
+            <td>${item.symbol}</td>
+            <td>${item.current_price}</td>
+            <td>${item.total_volume}</td>
+            <td>${item.price_change_24h}</td>
+            <td>${item.market_cap}</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

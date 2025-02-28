@@ -1,0 +1,87 @@
+
+body{
+  background: #1A1A1C;
+  color:white;
+  box-sizing: border-box;
+}
+
+.nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100vw;
+  margin-top: 40px;
+}
+.search-div{
+  margin-left:30px ;
+}
+
+.nav input{
+  width: 60vw;
+  height: 50px;  
+  background: #1A1A1C;
+  color:white;
+  border: 1px solid white;
+}
+
+.btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+.btn button{
+  height: 50px;
+  width: 15vw;
+  margin-left: 10px;
+  align-self: center;
+  background: #1A1A1C;
+  color:white;
+  border: 1px solid white;
+
+}
+
+.table-main{
+  
+  width: 90vw;
+  margin-top:50px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  /* background: red; */
+}
+
+#table-body  tr{
+
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 20px 0px;
+  border-bottom: 1px solid white;
+  
+}
+
+#table-body  td {
+  width: 20%;
+  font-size: 24px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+.coin-image{
+  display: flex;
+  align-items: center;
+
+}
+.coin-image img{
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  padding-right: 10px;
+  gap: 10px;  
+}
+
+.td-percent{
+  color:green;
+}
