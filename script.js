@@ -66,12 +66,11 @@ document.addEventListener("DOMContentLoaded",function(){
     displayData(coinsArray);
 
   });
-
   document.getElementById("ip-search").addEventListener("input",function(){
     let data = coinsArray;
-    let ip =document.getElementById("ip-search").ariaValueMax.toLowerCase();
+    let ip = document.getElementById("ip-search").value.toLowerCase();
     data = data.filter((item)=>{
-      return item.name.toLowerCase().includes(ip)
+      return item.name.toLowerCase().includes(ip)||item.symbol.toLowerCase().includes(ip);
     }) 
     displayData(data);
   })
